@@ -10,6 +10,7 @@
 #  include <stdio.h>
 int main(int argc, char *argv[])
 {
+	fputs(
 #endif
 
 /* update terget number N (N2 .. N0 hold decimal digit). */
@@ -146,9 +147,10 @@ int main(int argc, char *argv[])
 #endif
 /* check termination condition. */
 #if (N2 > 1) || ((N2 == 1) && ((N1 > 0) || (N0 > 0)))
+	, stdout);
 	return 0;
 }
 #else
-	puts(O);
+	O "\n"
 #  include __FILE__
 #endif
