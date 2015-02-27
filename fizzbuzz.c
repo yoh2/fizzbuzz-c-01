@@ -150,5 +150,5 @@ int main(int argc, char *argv[])
 }
 #else
 	puts(O);
-#  include "fizzbuzz.c"
+#  include __FILE__
 #endif
