@@ -7,6 +7,7 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
+	fputs(
 #endif
 #if N0 == 0
 #define N0 1
@@ -134,9 +135,10 @@ int main(int argc, char *argv[])
 #define O "FizzBuzz"
 #endif
 #if (N2 > 1) || ((N2 == 1) && ((N1 > 0) || (N0 > 0)))
+	, stdout);
 	return 0;
 }
 #else
-	puts(O);
-#include "fizzbuzz.c"
+	O "\n"
+#  include __FILE__
 #endif
